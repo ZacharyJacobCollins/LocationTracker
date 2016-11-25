@@ -17,7 +17,7 @@ if (navigator.geolocation) {
         };
 
      var capa = document.getElementById("capa");
-     capa.innerHTML = "latitud: " + latitude + " longitud: " + "   aquesta es la precisio en metres  :  " + accuracy;
+     capa.innerHTML = "latitude: " + latitude + " longitude: " + longitude + "   accuracy in meters:  " + accuracy;
 
         map = new google.maps.Map(
             document.getElementById("mapContainer"), mapOptions
