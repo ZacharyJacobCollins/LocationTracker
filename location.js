@@ -14,7 +14,7 @@ if (navigator.geolocation) {
             style: google.maps.NavigationControlStyle.SMALL
         },
         mapTypeId: google.maps.MapTypeId.ROADMAP
-        };
+    };
 
      var capa = document.getElementById("capa");
      capa.innerHTML = "latitude: " + latitude + " longitude: " + longitude + "   accuracy in meters:  " + accuracy;
@@ -22,6 +22,7 @@ if (navigator.geolocation) {
         map = new google.maps.Map(
             document.getElementById("mapContainer"), mapOptions
             );
+            
         var marker = new google.maps.Marker({
                 position: coords,
                 map: map,
