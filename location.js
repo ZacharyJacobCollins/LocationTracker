@@ -1,3 +1,5 @@
+
+
 if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(function(position){
     var latitude = position.coords.latitude;
@@ -15,7 +17,7 @@ if (navigator.geolocation) {
         };
 
      var capa = document.getElementById("capa");
-     capa.innerHTML = "latitud: " + latitude + " longitud: " + "   aquesta es la precisio en metres  :  " + accuracy;  
+     capa.innerHTML = "latitud: " + latitude + " longitud: " + "   aquesta es la precisio en metres  :  " + accuracy;
 
         map = new google.maps.Map(
             document.getElementById("mapContainer"), mapOptions
@@ -27,7 +29,7 @@ if (navigator.geolocation) {
         });
 
 
-    },function error(msg){alert('Please enable your GPS position future.');  
+    },function error(msg){alert('Please enable your GPS position future.');
 
   }, {maximumAge:600000, timeout:5000, enableHighAccuracy: true});
 
